@@ -1,7 +1,7 @@
+import styles from './popouts.module.css'
 import Input from "../Input/Input";
 import React from 'react'
 import * as ReactDOM from "react-dom";
-import styles from './popouts.module.css'
 import TextArea from "../TextArea/TextArea";
 import Button from "../Button/Button";
 let inp;
