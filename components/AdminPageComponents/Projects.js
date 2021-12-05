@@ -9,16 +9,11 @@ import Button from "../Button/Button";
 export default function Projects() {
   const projectsData = [
     {
-      title: "TIffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffTLE",
-      desc: "DESC fd4fdsfdsf"
-    },
-    {
-      title: "TIffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffTLE",
-      desc: "DESCfd4fdsffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ffffffffffffffffffffffff ffffffffffff fffffffff fffff fffffff ffff fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdsf"
-    },
-    {title: "TITLE", desc: "DESC fd4fdsfdsf"},
-    {title: "TITLE", desc: "DESC fd4fdsfdsf"},
-  ]
+      title: "Сайт-витрина для транспортных инноваций Москвы",
+      desc: "Витрина проектов для акселератора московского транспорта. Присутствует панель администратора, сотрудника, а так же профиль учатника.\n" +
+        "На сайте располагаются стартапы, которые проходят акселерацию в московском транспорте. К сожалению этот сайт так и не вышел в свет по ряду\n" +
+        "неудачных причин."
+    }]
 
   const [projects,setProjects]=useState(projectsData)
   const [isEdit, setIsEdit] = useState(projectsData.map(()=>{return false}))

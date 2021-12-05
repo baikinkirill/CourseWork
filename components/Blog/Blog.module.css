@@ -128,6 +128,7 @@
   display: flex;
   justify-content: flex-start;
   column-gap: 5px;
+  row-gap: 5px;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -153,4 +154,25 @@
   width: fit-content;
   padding: 5px 10px;
   border-radius: 7px;
+}
+
+.parent a{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-decoration: none;
+
+  color: #559CAD;
+
+}
+.linkParent{
+  display: flex;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  column-gap: 10px;
 }

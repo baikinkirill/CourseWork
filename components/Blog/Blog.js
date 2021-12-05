@@ -6,25 +6,25 @@ export default function (props) {
 
   const allArticles = [
     {
-      title: "А",
-      desc: "fds",
-      cover: "https://res.allmacwallpaper.com/get/Retina-MacBook-Pro-13-inch-wallpapers/Snow-mountain-2560x1600/4266-11.jpg",
-      publishDate: "24.11.2003",
-      tags: ["Tech"]
+      title: "Добавлена админка",
+      desc: "На сайт добавлена панель администратора, в которой можно редактировать пользователей, проекты а так же писать статьи.",
+      cover: "/static/images/screen10.png",
+      publishDate: "05.12.2021",
+      tags: ["Tech","Интересное","Функционал"]
     },
     {
-      title: "А",
-      desc: "fds",
-      cover: "https://res.allmacwallpaper.com/get/Retina-MacBook-Pro-13-inch-wallpapers/Snow-mountain-2560x1600/4266-11.jpg",
-      publishDate: "24.11.2003",
-      tags: ["Tech"]
+      title: "Красивая пикча для заполнения блога контентом",
+      desc: "Здесь можно было бы вставить текст-рыбу, простой Lorem Ipsum, но я подумал, что сделаю это в следующей статье.",
+      cover: "/static/images/Snow-mountain-2560x1600.jpg",
+      publishDate: "05.12.2021",
+      tags: ["Фотография"]
     },
     {
-      title: "А",
-      desc: "fds",
-      cover: "https://res.allmacwallpaper.com/get/Retina-MacBook-Pro-13-inch-wallpapers/Snow-mountain-2560x1600/4266-11.jpg",
-      publishDate: "24.11.2003",
-      tags: ["Tech"]
+      title: "Как и обещал, здесь вставил текст-рыбу",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, cum dolorem dolores facilis illo illum in, iusto molestiae mollitia, porro provident repellat sint unde?\n",
+      cover: "/static/images/react-js-1.jpg",
+      publishDate: "05.12.2021",
+      tags: ["Случайный текст"]
     },
   ]
 
@@ -46,12 +46,18 @@ export default function (props) {
             <Input placeholder={"Поиск по статьям"}/>
             <h1>Тэги</h1>
             <div className={styles.tags}>
-
+              <Tag title={"Здесь"}/>
+              <Tag title={"показан"}/>
+              <Tag title={"пример"}/>
+              <Tag title={"различных"}/>
+              <Tag title={"тегов"}/>
             </div>
             <hr/>
             <h1>Ссылки</h1>
-            <div>
-
+            <div className={styles.linkParent}>
+              <a target={"_blank"} href={"https://github.com"}>github.com</a>
+              <a target={"_blank"} href={"https://vercel.com"}>vercel.com</a>
+              <a target={"_blank"} href={"https://finebot.site"}>finebot.site</a>
             </div>
           </div>
         </div>
@@ -65,7 +71,7 @@ const BlogElement = (props) => {
   console.log(props)
   return (
     <div className={styles.blogElement}>
-      <div style={{backgroundImage:"url(\""+props.data.cover+"\")"}} className={styles.img}/>
+      <div style={{backgroundImage:"url(\""+props.data.cover+"\")", backgroundPosition:"center"}} className={styles.img}/>
       {props.data.tags ? (
         <>
           <div className={styles.tags}>

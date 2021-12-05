@@ -3,15 +3,32 @@ import HorizontalImagesBlock from "../HorizontalImagesBlock/HorizontalImagesBloc
 
 export default function (props){
 
-  const element=()=>{
-
+  const element2=()=>{
     return(
       <>
-        <HorizontalImagesBlock images={["https://images7.alphacoders.com/587/thumb-1920-587675.jpg","https://images6.alphacoders.com/113/thumbbig-1135429.webp","https://images.alphacoders.com/113/thumb-1920-1135430.jpg"]}/>
+        <HorizontalImagesBlock images={["/static/images/screen1.png","/static/images/screen2.png","/static/images/screen3.png"]}/>
         <div className={styles.textParent}>
-          <h2>Название проекта</h2>
+          <h2>Лендинг о проекте</h2>
+          <div>Лендинг для проекта, занимающегося адаптацией сайтов для людей с особенностями зрения.
+            На курсовой работе представлена отдельная версия, написанная исключительно на JS и CSS, с ограниченным функционалом
+            В самом лендинге используются другие инструменты.
+          </div>
+          <hr/>
+        </div>
+      </>
+    )
+  }
+
+  const element=()=>{
+    return(
+      <>
+        <HorizontalImagesBlock images={["/static/images/screen7.png","/static/images/screen4.png","/static/images/screen6.png"]}/>
+        <div className={styles.textParent}>
+          <h2>Сайт-витрина для транспортных инноваций Москвы</h2>
           <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea, facilis! Alias aliquid, aspernatur culpa deleniti inventore iste odio optio repellat sit voluptate. Consectetur dolor doloribus eos fugiat libero modi molestiae nemo obcaecati odio quam, quisquam quos vel veritatis vitae.
+            Витрина проектов для акселератора московского транспорта. Присутствует панель администратора, сотрудника, а так же профиль учатника.
+            На сайте располагаются стартапы, которые проходят акселерацию в московском транспорте. К сожалению этот сайт так и не вышел в свет по ряду
+            неудачных причин.
           </div>
           <hr/>
         </div>
@@ -22,7 +39,7 @@ export default function (props){
   return(
     <div className={styles.parent} id={props.name}>
       <h1>Проекты</h1>
-      {element()}
+      {element2()}
       {element()}
     </div>
   )
