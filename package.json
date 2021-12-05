@@ -1,34 +1,26 @@
 {
-  "name": "amp",
-  "version": "1.0.0",
+  "name": "coursework",
+  "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@draft-js-plugins/image": "^4.1.2",
-    "@types/react": "^17.0.34",
-    "@vkontakte/icons": "^1.133.0",
-    "@vkontakte/vkui": "^4.20.0",
-    "blueimp-load-image": "^5.16.0",
     "draft-js": "^0.11.7",
     "draft-js-export-html": "^1.4.1",
     "draft-js-image-plugin": "^2.0.7",
     "draft-js-plugins-editor": "^3.0.0",
-    "draftjs-to-html": "^0.9.1",
-    "html-to-draftjs": "1.5.0",
-    "image-to-base64": "^2.2.0",
+    "html-to-draftjs": "^1.5.0",
     "isomorphic-unfetch": "^3.1.0",
-    "lottie-web": "^5.7.14",
-    "next": "latest",
-    "node-sass": "^5.0.0",
-    "react": "^17.0.2",
-    "react-chips": "^0.8.0",
-    "react-dom": "^17.0.2",
-    "react-lottie": "^1.2.3",
-    "react-reveal": "^1.2.2",
-    "typescript": "^4.4.4"
+    "lottie-web": "^5.8.1",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
-  "license": "MIT"
+  "devDependencies": {
+    "eslint": "8.4.0",
+    "eslint-config-next": "12.0.7"
+  }
 }
