@@ -1,0 +1,63 @@
+
+.toolsContainer{
+  padding: 15px;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  .tools{
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+
+    & *:nth-child(n){
+      padding: 5px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.blockquote{
+  padding: 15px;
+  border-radius: 7px;
+  width: fit-content;
+  background-color: #d2d2d2;
+}
+.codeblock{
+  color: pink
+}
+
+.editor{
+  margin: 10px 15px;
+  padding:15px;
+  border: 1px #bbbbbb solid;
+  border-radius: 7px;
+}
+
+.imageEditor{
+  .formGroup{padding:0px;margin:0px;height: 30px;}
+}
+.imageEditor input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none;height: 30px;}
+.imageEditor .label i,.imageEditor .label .title{color:grey;transition:200ms color}
+.imageEditor .label:hover i,.imageEditor .label:hover .title{color:#000}
+
+
+.imageEditor{
+  label{
+    img{
+      width: 20px;
+      height: 20px;
+      padding-left: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.RichEditorActiveButton{
+  color:green;
+}
