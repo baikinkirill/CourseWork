@@ -1,14 +1,16 @@
-.parent input {
+.parent textarea {
   background: rgba(196, 196, 196, 0.31);
   border-radius: 10px;
   border: rgba(173, 173, 173, 0.31) 2px solid;
   min-height: 30px;
   width: calc(100% - 34px);
   outline: none;
-  padding: 5px 15px;
+  padding: 10px 15px;
   font-size: 16px;
   font-weight: 400;
+  resize: none;
+  font-family: Roboto;
 }
-.parent input:focus {
+.parent textarea:focus {
   border: 2px solid #5EBFCB;
 }

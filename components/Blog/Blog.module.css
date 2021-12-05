@@ -1,0 +1,156 @@
+.parent {
+  padding: 10px;
+  padding-top: 80px;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  display: block;
+  position: relative;
+}
+.parent div {
+  font-weight: 400;
+}
+.parent .blogParent {
+  display: flex;
+  column-gap: 40px;
+}
+@media (max-width: 1000px) {
+  .parent .blogParent {
+    flex-direction: column-reverse;
+  }
+}
+.parent .blogParent .paramsParent {
+  margin: 5px 0px;
+  flex: 0 0 auto;
+  width: 400px;
+}
+@media (max-width: 1000px) {
+  .parent .blogParent .paramsParent {
+    width: 100%;
+  }
+}
+.parent .blogParent .paramsParent .stickyContainter {
+  position: sticky;
+  top: 100px;
+}
+@media (max-width: 1000px) {
+  .parent .blogParent .paramsParent .stickyContainter *:nth-child(n) {
+    display: none;
+  }
+  .parent .blogParent .paramsParent .stickyContainter *:nth-child(1) {
+    display: block;
+  }
+}
+.parent .blogParent .paramsParent .stickyContainter hr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.parent .blogParent .paramsParent .stickyContainter h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  color: #000000;
+}
+.parent .blogParent .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+  column-gap: 15px;
+  width:100%;
+}
+@media (max-width: 600px) {
+  .parent .blogParent .content {
+    flex-direction: column;
+  }
+}
+.parent .blogParent .content .blogElement:nth-child(1n) {
+  flex: 1 1 40%;
+}
+.parent .blogParent .content .blogElement:nth-child(1n) .img:nth-child(1n+1) {
+  height: 250px;
+}
+.parent .blogParent .content .blogElement:nth-child(1) {
+  flex: 1 1 100%;
+  min-width: 100%;
+}
+.parent .blogParent .content .blogElement:nth-child(1) .img:nth-child(1n) {
+  height: 350px;
+}
+.parent .blogParent .content .blogElement:nth-child(1) *:nth-child(1n+1) {
+  width: 100%;
+  max-width: 1450px;
+}
+.parent .blogParent .content .blogElement:nth-child(1) *:nth-child(1n+1) .tag:nth-child(n) {
+  width: fit-content;
+  flex: 0 0 auto;
+}
+.parent .blogParent .content .blogElement *:nth-child(1n) {
+  margin: 5px 0px;
+}
+.parent .blogParent .content .blogElement .img {
+  margin-bottom: 10px;
+  background: gray;
+  height: 370px;
+  border-radius: 15px;
+  background-size: cover;
+}
+.parent .blogParent .content .blogElement h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0px;
+  color: #000000;
+}
+.parent .blogParent .content .blogElement .date {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.31);
+}
+.parent .blogParent .content .blogElement .desc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.tags {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.tags div:nth-child(n) {
+  flex: 0 0 auto;
+  width: fit-content;
+  background-color: rgba(85, 156, 173, 0.25);
+}
+.tags .tag:nth-child(1n+1) {
+  background-color: rgba(85, 156, 173, 0.25);
+}
+.tags .tag:nth-child(2n+1) {
+  background-color: rgba(146, 55, 77, 0.25);
+}
+.tags .tag:nth-child(3n+1) {
+  background: rgba(193, 178, 171, 0.25);
+}
+.tags .tag:nth-child(4n+1) {
+  background: rgba(74, 88, 153, 0.16);
+}
+.tag {
+  font-size: 16px;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 7px;
+}

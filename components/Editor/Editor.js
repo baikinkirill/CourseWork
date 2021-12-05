@@ -6,7 +6,7 @@ import * as React from "react";
 import fetch from "isomorphic-unfetch";
 import htmlToDraft from 'html-to-draftjs';
 
-import styles from './Editor.module.scss'
+import styles from './Editor.module.css'
 
 const imagePlugin = createImagePlugin();
 const plugins = [imagePlugin];
@@ -131,7 +131,7 @@ export default class RichEditorExample extends React.Component {
           ) : (
             <>
               <div className={styles.toolsContainer}
-                   style={{position: "sticky", top: "110px", backgroundColor: "white"}}>
+                   style={{position: "sticky", top: "10px", backgroundColor: "white"}}>
                 <div>
                   <BlockStyleControls
                     editorState={editorState}

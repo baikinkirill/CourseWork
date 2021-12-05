@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+.parent{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/static/images/loginBackground.jpg");
+  background-size: cover;
+}
+
+.loginCard{
+  min-width: 300px;
+  display: grid;
+  row-gap: 10px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+}
+.loginCard h2{
+  margin:0px;
+  margin-bottom: 25px;
+  font-family: Roboto;
+  font-weight: 800;
+}
+
+@media(max-width: 400px) {
+  .loginCard{
+    min-width: 150px;
+  }
+}
+

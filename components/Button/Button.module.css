@@ -1,0 +1,25 @@
+.parent, .blackButton {
+  transition: all 100ms;
+  padding: 17px 40px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.parent:hover, .blackButton:hover {
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.parent:active, .blackButton:active {
+  transform: translateY(2px);
+}
+.blackButton {
+  background-color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}

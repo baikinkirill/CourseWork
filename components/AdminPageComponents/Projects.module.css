@@ -1,0 +1,77 @@
+.parent {
+  display: grid;
+  row-gap: 15px;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.parent h3 {
+  flex: 0 0 auto;
+  max-width: calc(80vw - 600px);
+
+  margin: 0px;
+  font-size: 16px;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: keep-all;
+  line-break: auto;
+  hyphens: manual;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.parent hr {
+  flex: 0 0 auto;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin: 0px;
+  border: 0px;
+  background-color: rgba(128, 128, 128, 0.63);
+}
+
+.desc {
+  flex: 1 1 auto;
+  color: rgba(128, 128, 128, 0.85);
+  max-width: calc(50vw - 350px);
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: keep-all;
+  line-break: auto;
+  hyphens: manual;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.addButton {
+  font-size: 16px;
+  margin-left: 10px;
+  color: #6678CC;
+  font-weight: 800;
+  font-family: Roboto;
+}
+
+@media (max-width: 1100px) {
+  .desc {
+    max-width: calc(50vw - 70px);
+  }
+
+  .parent h3 {
+    max-width: calc(40vw - 70px);
+  }
+}
+
+

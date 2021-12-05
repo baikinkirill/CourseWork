@@ -1,0 +1,35 @@
+.parent {
+  padding: 10px;
+  padding-top: 80px;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: calc(100vh - 90px);
+  display: block;
+  position: relative;
+}
+.parent .textParent {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.parent .textParent h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+.parent .textParent div {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+.parent .textParent hr {
+  background: #E5E5E5;
+  margin: 30px;
+}
