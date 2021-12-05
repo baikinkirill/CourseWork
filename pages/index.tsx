@@ -5,7 +5,7 @@ import About from "../components/About/About";
 import Projects from "../components/Projects/Projects";
 import Blog from "../components/Blog/Blog";
 
-export default function (props) {
+export default function (props:any) {
 
   return (
     <div className={styles.parent}>
