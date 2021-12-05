@@ -4,7 +4,7 @@ import {useState} from "react";
 export default function AdminMenu(props) {
   const menu = [
     {title: "Разделы", content: ['Проекты', "О нас"]},
-    {title: "Блог", content: ['Создать статью', "Поиск"]},
+    {title: "Блог", content: ['Создать статью']},
   ]
 
   const {activeTab, setActiveTab} = props.state
