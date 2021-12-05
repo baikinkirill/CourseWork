@@ -36,7 +36,7 @@
 }
 
 .closeButton{
-  background-image: url("//static/images/icons8-close.svg");
+  background-image: url("/static/images/icons8-close.svg");
   width: 16px;
   height: 16px;
   background-size: cover;
