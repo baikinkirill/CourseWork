@@ -27,6 +27,7 @@ export default function AdminMenu(props) {
                 return <div active={(activeTab.toString() === (i.toString()+j.toString())).toString()}
                             onClick={() => {
                               setActiveTab(i.toString()+j.toString())
+                              props.setOpen(false)
                             }}
                             className={styles.menuItemButton}>{e}</div>
               })}

@@ -37,7 +37,7 @@ export default function Index() {
 
   return (
     <div className={styles.parent}>
-      <div className={styles.menu} show={open.toString()}><AdminMenu state={{activeTab, setActiveTab}}/></div>
+      <div className={styles.menu} show={open.toString()}><AdminMenu setOpen={(e)=>setOpen(e)} state={{activeTab, setActiveTab}}/></div>
       <div style={{width: "100%"}} className={styles.content}>
         <div className={styles.header}>
           <div onClick={() => {

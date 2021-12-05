@@ -30,7 +30,7 @@
 }
 .editor {
   font-family: Roboto;
-
+  word-break: break-word;
   margin: 10px 15px;
   padding: 15px;
   border: 1px #bbbbbb solid;

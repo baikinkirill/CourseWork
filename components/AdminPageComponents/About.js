@@ -59,7 +59,7 @@ export default function About() {
                         }}/>
                       </div>
                     </div>
-                    <div className={styles.desc}>
+                    <div className={styles.desc} style={{maxWidth:"100%"}}>
                       {e.desc}
                     </div>
                   </div>
@@ -82,7 +82,7 @@ export default function About() {
                           }}/>
                         </div>
                       </div>
-                      <div className={styles.desc}>
+                      <div className={styles.desc} style={{maxWidth:"100%"}}>
                         <TextArea defaultValue={e.desc} onChange={(e)=>{
                           data.desc=e
                         }}/>
