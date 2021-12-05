@@ -11,6 +11,7 @@ export function Feedback(){
   document.body.appendChild(inp)
 }
 
+
 function FeedbackComponent(){
 
   return(
