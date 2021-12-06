@@ -1,8 +1,8 @@
 # Сайт стартапа
 
-```git clone https://github.com/FineBot/WMProject-Front.git```
+```git clone https://github.com/FineBot/CourseWork.git```
 
-```cd WMProject-Front```
+```cd CourseWork```
 
 ```npm install```
 
@@ -16,12 +16,6 @@
 
 ```npm run dev```
 
-### Для входа
-в панель администратора, необходимо нажать на иконку пользователя в загаловке сайта, либо перейти по ссылке localhost:3000/admin
-```
-Имя: test
-Пароль: test
-```
 
 Для работы необходимо сначала запустить сервер: https://github.com/FineBot/WMProject-Back
 
