@@ -41,13 +41,11 @@
     flex: 1 1 auto;
     color: rgba(128, 128, 128, 0.85);
     max-width: calc(50vw - 350px);
-
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: keep-all;
     line-break: auto;
     hyphens: manual;
-
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -59,7 +57,6 @@
       grid-template-columns: repeat(2,1fr);
 
     }
-
     @media(max-width: 700px) {
       .gridParent{
         grid-template-columns: repeat(1,1fr);

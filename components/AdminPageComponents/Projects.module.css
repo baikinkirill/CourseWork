@@ -13,16 +13,13 @@
 .parent h3 {
   flex: 0 0 auto;
   max-width: calc(80vw - 600px);
-
   margin: 0px;
   font-size: 16px;
-
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: keep-all;
   line-break: auto;
   hyphens: manual;
-
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -43,13 +40,11 @@
   flex: 1 1 auto;
   color: rgba(128, 128, 128, 0.85);
   max-width: calc(50vw - 350px);
-
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: keep-all;
   line-break: auto;
   hyphens: manual;
-
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;

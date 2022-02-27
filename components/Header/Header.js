@@ -29,7 +29,6 @@ export default function (props) {
       lottie.setDirection(1, "menu")
       lottie.play("menu")
       document.body.style.overflowY = "hidden"
-
     }
   }, [open])
 

@@ -64,10 +64,7 @@ export default function (props) {
   return (
     <div
       id={"menuParent"}
-
-      // @ts-ignore
       name={props.open}
-
       className={styles.menuParent}>
       <div id={"menu"} className={styles.menu}
            onMouseLeave={() => {
@@ -87,8 +84,6 @@ export default function (props) {
                    let las = lastI
                    setLastI(-1)
                    setTimeout(()=>setLastI(las))
-
-
                  }}
                  onClick={() => {
                    blockScrollChangeRef.current=true
@@ -97,8 +92,6 @@ export default function (props) {
                    let elem=document.getElementById("widget"+i.toString())
                    props.setOpenMenu(false)
                    elem.scrollIntoView({behavior:"smooth"})
-
-
                  }}>
               {e}
             </div>
@@ -117,8 +110,6 @@ export default function (props) {
         if(props.open)
           props.setOpenMenu(false)
       }}/>
-
-
     </div>
   )
 }

@@ -10,10 +10,7 @@ export function Feedback(){
   ReactDOM.render(<FeedbackComponent/>,inp)
   document.body.appendChild(inp)
 }
-
-
 function FeedbackComponent(){
-
   return(
     <div id={"popout"} className={styles.popoutParent}>
       <div className={styles.popoutContent}>
@@ -23,7 +20,7 @@ function FeedbackComponent(){
         }}/>
         <Input placeholder={"Введите Ваше ФИО"}/>
         <Input placeholder={"Укажите тему"}/>
-        <TextArea style={{minHeight:"100px"}} placeholder={"Укажите тему"}/>
+        <TextArea style={{minHeight:"100px"}} placeholder={"Введите сообщение"}/>
         <div style={{width:"100%",display:"grid",justifyContent:"flex-end"}}>
           <Button onClick={()=>{
             document.body.removeChild(inp)

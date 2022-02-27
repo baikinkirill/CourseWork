@@ -6,7 +6,17 @@ export default function ({Component, pageProps}) {
           margin: 0px;
         }
 
-        
+        * {
+          font-family: Roboto;
+        }
+
+        @font-face {
+          font-family: Roboto;
+          src: url("/static/fonts/Roboto/Roboto-Light.ttf");
+          font-weight: 100;
+        }
+
+
       `}</style>
       <Component {...pageProps} />
     </>
